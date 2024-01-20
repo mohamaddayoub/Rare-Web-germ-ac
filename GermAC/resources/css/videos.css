@@ -1,0 +1,24 @@
+.top-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 20px 5%;
+}
+.top-courses .feat {
+    width: 24%;
+    height: 170px;
+    margin: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.top-courses .feat .video {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.top-courses .feat .video video {
+    width: 100%;
+    height: 100%;
+}

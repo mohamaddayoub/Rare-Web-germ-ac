@@ -1,0 +1,128 @@
+:root {
+    --first-color: #243253;
+    --light-color: #f1f1f1;
+    --dark-color: #3d3d3d;
+}
+
+.slider {
+    height: 100vh;
+    position: relative;
+}
+
+.slider .full {
+    display: none;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--first-color);
+}
+
+.slider .full::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.slider .full.active {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .full.one {
+    background-image: url("../../new_images/slide-1-alt.jpeg");
+}
+
+.slider .full.two {
+    background-image: url("../../new_images/slide-2-alt.jpeg");
+}
+
+.slider .full.three {
+    background-image: url("../../new_images/slide-3-alt.jpg");
+}
+
+.slider .full.four {
+    background-image: url("../../new_images/slide-4-alt.jpeg");
+}
+
+@media (min-width:480px) {
+    .slider .full.one {
+        background-image: url("../../new_images/slide-1.jpeg");
+    }
+
+    .slider .full.two {
+        background-image: url("../../new_images/slide-2.jpeg");
+    }
+
+    .slider .full.three {
+        background-image: url("../../new_images/slide-3.jpg");
+    }
+
+    .slider .full.four {
+        background-image: url("../../new_images/slide-4.jpeg");
+    }
+}
+
+.slider .change {
+    color: var(--light-color);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    padding: 10px;
+    cursor: pointer;
+    background: var(--first-color);
+}
+
+.slider .change:hover {
+    opacity: 0.8;
+    transition: 250ms all;
+}
+
+.slider .left {
+    padding: 15px 15px 15px 30px;
+    border-radius: 0 5px 5px 0;
+    left: 0px;
+}
+
+.slider .right {
+    padding: 15px 30px 15px 15px;
+    border-radius: 5px 0 0 5px;
+    right: 0px;
+}
+
+.slider ul {
+    display: flex;
+    position: absolute;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider ul li {
+    padding: 5px;
+    background-color: var(--light-color);
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.slider ul li.active,
+.slider ul li:hover {
+    background-color: var(--first-color);
+    transition: 250ms all;
+}
+
+@media (max-width:767px) {
+    .slider .change {
+        display: none;
+    }
+}

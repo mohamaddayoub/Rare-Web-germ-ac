@@ -1,0 +1,55 @@
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.services .image-container {
+    flex-basis: calc(100%/2);
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.services .image-container:hover {
+    margin-top: -10px;
+}
+
+.services .image-container img {
+    width: 100%;
+}
+
+.services .image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.services .image-container .caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .services .image-container {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .services .image-container .caption {
+        font-size: 24px;
+    }
+}

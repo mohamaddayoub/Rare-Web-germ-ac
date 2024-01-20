@@ -1,0 +1,250 @@
+.content {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../img/back5.jpg');
+    background-size: contain;
+    background-position: center;
+    opacity: 100;
+  }
+.content .header- {
+    padding: 10px 0;
+    width: 100%;
+}
+.content .header- h2 {
+    color: #E22028;
+    font-family: sans-serif;
+}
+.content .section-1 {
+    width: 55%;
+}
+.content .section-1 .paragraph {
+    padding: 10px 0;
+}
+.content .section-1 .paragraph p {
+    color: gray;
+    padding: 10px 0;
+}
+.content .section-1 .plus {
+    padding: 10px 0;
+}
+.content .section-1 .plus i {
+    color: #E22028;
+    font-size: larger;
+}
+.content .section-1 .plus h3 {
+    font-weight: bolder;
+    display: inline-block;
+    padding: 0 10px;
+}
+.content .section-1 .img-1 {
+    padding: 10px 0;
+    position: relative;
+}
+.content .section-1 .img-1 img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.content .section-1 .img-1 p {
+    display: inline-block;
+    color: #E22028;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20%;
+    padding: 0 10px;
+    font-size: larger;
+}
+.content .section-1 .img-2 {
+    padding: 10px 0;
+    position: relative;
+}
+.content .section-1 .img-2 img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.content .section-1 .img-2 p {
+    display: inline-block;
+    color: #E22028;
+    font-family: sans-serif;
+    position: absolute;
+    top: 20%;
+    padding: 0 10px;
+    font-size: larger;
+}
+.content .section-2 {
+    width: 42%;
+}
+.content .section-2 .box {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background-color: #FFCC00;;
+}
+.content .section-2 .box p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.content .section-2 .table {
+    background-color: rgb(169,184,195);
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+.content .section-2 .table table{
+    width: 100%;
+}
+.content .section-2 .table th{
+    background-color: #E22028;
+    color: white;
+    padding: 10px 0;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+.content .section-2 .table td{
+    color: rgb(66, 66, 66);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.top-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 20px 5%;
+}
+.top-courses .feat {
+    width: 23%;
+    height: 280px;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: space-between;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 2% 1%;
+}
+.top-courses .feat .image{
+    width: 100%;
+    height: 70%;
+    background-image: url(../assets/img/doctors/doctors-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.top-courses .feat .disc {
+    width: 100%;
+    height: 20%;
+    background-color: red;
+}
+@media screen and (max-width: 768px) {
+    .top-courses .feat {
+        width: 100%;
+        margin: 5px 0px;
+    }}
+@media screen and (max-width: 768px) {
+    .content .header- {
+        padding: 10px 0;
+        width: 100%;
+    }
+    .content .header- h2 {
+        color: #E22028;
+        font-family: sans-serif;
+    }
+    .content .section-1 {
+        width: 100%;
+    }
+    .content .section-1 .paragraph {
+        padding: 10px 0;
+    }
+    .content .section-1 .paragraph p {
+        color: gray;
+        padding: 10px 0;
+    }
+    .content .section-1 .plus {
+        padding: 10px 0;
+    }
+    .content .section-1 .plus i {
+        color: #E22028;
+        font-size: larger;
+    }
+    .content .section-1 .plus h3 {
+        font-weight: bolder;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .content .section-1 .img-1 {
+        padding: 10px 0;
+        position: relative;
+    }
+    .content .section-1 .img-1 img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    .content .section-1 .img-1 p {
+        display: inline-block;
+        color: #E22028;
+        font-family: sans-serif;
+        position: absolute;
+        top: 20%;
+        padding: 0 10px;
+        font-size: larger;
+    }
+    .content .section-1 .img-2 {
+        padding: 10px 0;
+        position: relative;
+    }
+    .content .section-1 .img-2 img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    .content .section-1 .img-2 p {
+        display: inline-block;
+        color: #E22028;
+        font-family: sans-serif;
+        position: absolute;
+        top: 20%;
+        padding: 0 10px;
+        font-size: larger;
+    }
+    .content .section-2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .content .section-2 .box {
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: #FFCC00;;
+    }
+    .content .section-2 .box p {
+        color: white;
+        font-family: sans-serif;
+        font-weight: bolder;
+    }
+    .content .section-2 .table {
+        background-color: rgb(169,184,195);
+        margin: 10px 0;
+        font-family: sans-serif;
+    }
+    .content .section-2 .table table{
+        width: 100%;
+    }
+    .content .section-2 .table th{
+        background-color: #E22028;
+        color: white;
+        padding: 10px 0;
+        font-weight: bolder;
+        box-sizing: border-box;
+    }
+    .content .section-2 .table td{
+        color: rgb(66, 66, 66);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

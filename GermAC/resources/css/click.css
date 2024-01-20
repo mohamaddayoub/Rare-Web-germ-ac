@@ -1,0 +1,288 @@
+* {
+    border: 0px;
+    padding: 0px;
+    outline: 0px;
+    margin: 0px;
+    -webkit-user-select: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../img/back5.jpg');
+    background-size: contain;
+    background-position: center;
+    opacity: 100;
+  }
+:root {
+    --main-color: #039c92;
+    scroll-behavior: smooth;
+}
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(211, 211, 211);
+}
+.nav .sub-nav {
+    width: 100%;
+    background-color: rgb(70, 70, 70);
+}
+.nav .sub-nav .ps {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 2px 0px 2px 4%;
+}
+.nav .sub-nav .ps h4 {
+    color: #fff;
+    padding: 0px 10px;
+    border-left: 2px solid white;
+    opacity: 0.4;
+    transition: all 0.5s;
+}
+.nav .sub-nav .ps h4:hover {
+    opacity: 1;
+}
+.nav .sub-nav .ps h4:nth-of-type(1) {
+    opacity: 1;
+}
+.nav .logo{
+    width: 10%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.nav .logo img {
+    width: 30px;
+    height: 30px;
+}
+.nav .main-menu-container {
+    width: 80%;
+    padding-top: 10px;
+}
+.nav .search {
+    width: 8%;
+    position: relative;
+}
+.nav .search i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.nav .main-menu-container .main-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav .main-menu-container .main-menu li {
+
+}
+.nav .main-menu-container .main-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu .home a {
+    color: red;
+}
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container {
+    max-height: 300px;
+} */
+.nav .main-menu-container .main-menu .germ {
+    position: relative;
+}
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container .sub-menu{
+    opacity: 1;
+} */
+.nav .main-menu-container .main-menu li a:hover {
+    color: red;
+}
+.nav .main-menu-container .main-menu .sub-menu-container {
+    max-height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color:  rgb(211, 211, 211);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub-menu-container .sub-menu {
+    opacity: 0;
+    list-style: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub-menu-container .sub-menu li {
+    padding: 10px;
+}
+.nav .main-menu-container .main-menu .sub-menu-container .sub-menu li a:hover {
+    color: red;
+}
+.rela {
+    position: relative;
+}
+/* .nav .main-menu-container .main-menu .rela a:hover + .sub2-menu-container {
+    max-height: 300px;
+} */
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub2-menu-container .sub2-menu{
+    opacity: 1;
+} */
+.nav .main-menu-container .main-menu .sub2-menu-container {
+    max-height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color:  rgb(211, 211, 211);
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+    top: 0;
+    left: 100%;
+}
+.nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu {
+    opacity: 0;
+    list-style: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu li {
+    padding: 10px;
+}
+.nav .main-menu-container .main-menu .sub2-menu-container .sub2-menu li a:hover {
+    color: red;
+}
+.ban {
+    width: 100%;
+    max-width: 100vw;
+    height: 450px;
+    margin-bottom: 10px;
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main {
+    width: 90%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.course {
+    width: 65%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+.course .photo {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    background-image: url(../img/5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.course .disc {
+    margin-bottom: 20px;
+}
+.course .disc p {
+    color: rgb(96, 96, 96);
+}
+.three {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.b , .n , .m {
+    width: 32%;
+    height: 200px;
+}
+.b div:nth-of-type(1) {
+    height: 150px;
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.b div:nth-of-type(2) {
+    height: 80px;
+    margin: 10px;
+}
+.n div:nth-of-type(1) {
+    height: 150px;
+    background-image: url(../img/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.n div:nth-of-type(2) {
+    height: 80px;
+    margin: 10px;
+}
+.m div:nth-of-type(1) {
+    height: 150px;
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.m div:nth-of-type(2) {
+    height: 80px;
+    margin: 10px;
+}
+.post {
+    width: 30%;
+}
+.post .sea {
+    margin-bottom: 20px;
+}
+.post .sea input {
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+}
+.post .box .head {
+    background-color: rgb(125, 125, 125);
+    padding: 20px;
+    color: #fff;
+}
+.post .box div:nth-of-type(2),
+.post .box div:nth-of-type(3),
+.post .box div:nth-of-type(4),
+.post .box div:nth-of-type(5),
+.post .box div:nth-of-type(6) {
+    background-color: rgb(161, 159, 159);
+    padding: 20px;
+    color: #fff;
+    transition: all 1s;
+}
+.post .box div:nth-of-type(2):hover,
+.post .box div:nth-of-type(3):hover,
+.post .box div:nth-of-type(4):hover,
+.post .box div:nth-of-type(5):hover,
+.post .box div:nth-of-type(6):hover {
+    color: red;
+}
+@media screen and (max-width: 768px) {
+    .main .course {
+        width: 100%;
+    }
+    .main .post {
+        width: 100%;
+    }
+}

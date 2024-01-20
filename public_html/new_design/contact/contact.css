@@ -1,0 +1,138 @@
+.contacting-us {
+    background-color: #243253;
+    color: white;
+    padding-bottom: 0;
+}
+
+.contacting-us .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacting-us h4 {
+    padding-top: 25px;
+    border-top: 1px solid white;
+    font-size: 18px;
+    font-weight: 100;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.info div {
+    flex: 1 0 33.33%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.info div:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+[dir="rtl"] .info div:not(:last-child) {
+    border-right: none;
+    border-left: 1px solid white;
+}
+
+.info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.info div:nth-child(2) h3,
+.info div:nth-child(3) h3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .info div {
+        flex-basis: 50%;
+    }
+
+    .info div:is(:nth-child(2)) {
+        border-right: none;
+    }
+
+    [dir="rtl"] .info div:is(:nth-child(2)) {
+        border-left: none;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .form h2 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+.form {
+    margin-bottom: 50px;
+}
+
+.form h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.form-col {
+    max-width: 767px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.form-row {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form button {
+    display: block;
+    margin: 25px 0;
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0047ba;
+    width: fit-content;
+}
+
+input:not([type="checkbox"]) {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    padding: 10px 5px;
+    color: white;
+    flex-grow: 1;
+    font-size: 18px;
+}

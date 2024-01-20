@@ -1,0 +1,164 @@
+.contact {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 25px 25px 25px 25px;
+    color: white;
+}
+
+.contact .show-logo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 24px;
+    color: white;
+    text-shadow: 0px 0px 1px #3b3b3b;
+}
+
+.contact .show-logo img {
+    width: 100px;
+}
+
+.contact h2 {
+    font-size: 18px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.contact .office p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.contact .office h3:first-of-type {
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 12.5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    width: fit-content;
+    padding-bottom: 5px;
+}
+
+.contact .office h3:nth-last-of-type(2),
+.contact .office h3:last-of-type {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 12.5px;
+}
+
+.contact .office h3:last-of-type {
+    margin-bottom: 25px;
+}
+
+.contact .office ul {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.contact .office ul li a {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(255 255 255 / 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.25s ease;
+    font-size: 18px;
+}
+
+.contact .office ul a:hover {
+    background-color: white;
+    color: #243253;
+}
+
+.contact .links ul li {
+    margin: 7.5px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contact .contact-us form input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    color: white;
+    margin: 25px 0;
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+}
+
+.contact .contact-us form input:first-child {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.contact .contact-us button {
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #0047ba;
+}
+
+@media (max-width: 480px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+    .contact .show-logo {
+        /* justify-content: center; */
+    }
+
+    .contact .office {
+        /* text-align: center; */
+        margin-top: 25px;
+    }
+
+    .contact .office h3:first-of-type {
+        /* margin: 0 auto 15px auto; */
+    }
+
+    .contact .links {
+        /* text-align: center; */
+        margin-top: 25px;
+    }
+
+    .contact .contact-us {
+        /* text-align: center; */
+        margin-top: 25px;
+    }
+
+    .contact .office ul {
+        /* justify-content: center; */
+    }
+}
+
+@media (min-width: 481px) {
+    .contact {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        padding: 25px 50px 25px 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .contact {
+        padding: 50px 100px 25px 100px;
+    }
+}

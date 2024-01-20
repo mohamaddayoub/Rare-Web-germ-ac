@@ -1,0 +1,357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    margin: 20px 0;
+    padding: 10px 5% 10px 5%;
+    position: relative;
+}
+/* .header::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+.header .logo {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.header .title {
+    display: inline-block;
+    width: 35%;
+    box-sizing: border-box;
+    padding: 10px 10% 10px 5px;
+}
+.header .title h1 {
+    width: fit-content;
+    padding-bottom: 10px;
+    color: rgb(0, 54, 72);
+    transition: all 1s;
+}
+.header .title h1:hover {
+    color: red;
+}
+.header .title p {
+    color: rgb(0, 54, 72);
+}
+.header .social-media {
+    display: inline-block;
+    width: 30%;
+}
+.social-media-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.social-media .social-media-flex div {
+    width: 15%;
+    height: 50px;
+    background-color: rgb(237, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.social-media .social-media-flex div:nth-of-type(1):hover {
+    background-color: rgb(20, 20, 255);
+}
+.social-media .social-media-flex div:nth-of-type(2):hover {
+    background-color: rgb(80, 80, 251);
+}
+.social-media .social-media-flex div:nth-of-type(3):hover {
+    background-color: rgb(140, 140, 255);
+}
+.social-media .social-media-flex div:nth-of-type(4):hover {
+    background-color: red;
+}
+.social-media .social-media-flex div:nth-of-type(5):hover {
+    background-color: rgb(85, 0, 164)
+}
+.social-media .social-media-flex div:nth-of-type(6):hover {
+    background-color: red;
+}
+.header .register {
+    display: inline-block;
+    padding-left: 10px;
+}
+.header .register input {
+    height: 50px;
+    color: white;
+    background-color: red;
+    padding: 0px 10px;
+    border: none;
+    transition: all 0.5s;
+}
+.header .register input:hover {
+    background-color: black;
+}
+.nav {
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: gray;
+}
+.nav-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav .main-menu-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav .nav-container .hum {
+    display: none;
+}
+.nav .main-menu-container .main-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav .main-menu-container .main-menu li a {
+    color: rgb(211, 208, 208);
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu .home a {
+    color: red;
+}
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container {
+    max-height: 300px;
+} */
+.nav .main-menu-container .main-menu .germ {
+    position: relative;
+}
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container .sub-menu{
+    opacity: 1;
+} */
+.nav .main-menu-container .main-menu li a:hover {
+    color: red;
+}
+.nav .main-menu-container .main-menu .sub-menu-container {
+    max-height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    /* background-color:  gray; */
+    background-color: gray;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub-menu-container .sub-menu {
+    opacity: 0;
+    list-style: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub-menu-container .sub-menu li {
+    padding: 10px;
+}
+.nav .main-menu-container .main-menu .sub-menu-container .sub-menu li a:hover {
+    color: red;
+}
+.rela {
+    position: relative;
+}
+/* .nav .main-menu-container .main-menu .rela a:hover + .sub2-menu-container {
+    max-height: 300px;
+} */
+/* .nav .main-menu-container .main-menu .germ a:hover + .sub2-menu-container .sub2-menu{
+    opacity: 1;
+} */
+.nav .main-menu-container .main-menu .sub2-menu-container {
+    max-height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: gray;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+    top: 0;
+    left: 100%;
+}
+.nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu {
+    opacity: 0;
+    list-style: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    transition: all 1s;
+}
+.nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu li {
+    padding: 10px;
+}
+.nav .main-menu-container .main-menu .sub2-menu-container .sub2-menu li a:hover {
+    color: red;
+}
+ul{
+    padding-left: 1rem;
+}
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .header .logo,
+    .header .title,
+    .header .social-media,
+    .header .register {
+        width: 100%;
+    }
+    .header .logo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .header .register {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0px;
+        margin-top: 20px;
+    }
+    .nav {
+        height: 70px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .nav-container {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: center;
+        position: relative;
+    }
+    .nav .nav-container .hum{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: center;
+    }
+    .nav .main-menu-container {
+        display: none;
+        padding: 10px;
+        width: 40%;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        z-index: 2;
+        background-color: gray;
+    }
+    .nav .nav-container .hum i{
+        font-weight: 900;
+    }
+    .nav .main-menu-container .main-menu {
+        width: 100%;
+        list-style: none;
+        display: block;
+    }
+    .nav .main-menu-container .main-menu li a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        transition: all 1s;
+    }
+    .nav .main-menu-container .main-menu li {
+        padding: 10px;
+    }
+    .nav .main-menu-container .main-menu .home a {
+        color: red;
+    }
+    /* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container {
+        max-height: 300px;
+    } */
+    .nav .main-menu-container .main-menu .germ {
+        position: relative;
+    }
+    /* .nav .main-menu-container .main-menu .germ a:hover + .sub-menu-container .sub-menu{
+        opacity: 1;
+    } */
+    .nav .main-menu-container .main-menu li a:hover {
+        color: red;
+    }
+    .nav .main-menu-container .main-menu .sub-menu-container {
+        max-height: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color:  gray;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: all 1s;
+        top: 0px;
+        left: 100%;
+    }
+    .nav .main-menu-container .main-menu li .sub-menu-container .sub-menu {
+        opacity: 0;
+        list-style: none;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: all 1s;
+    }
+    .nav .main-menu-container .main-menu li .sub-menu-container .sub-menu li {
+        padding: 5px 0;
+    }
+    .nav .main-menu-container .main-menu .sub-menu-container .sub-menu li a:hover {
+        color: red;
+    }
+    .rela {
+        position: relative;
+    }
+    /* .nav .main-menu-container .main-menu .rela a:hover + .sub2-menu-container {
+        max-height: 300px;
+    } */
+    /* .nav .main-menu-container .main-menu .germ a:hover + .sub2-menu-container .sub2-menu{
+        opacity: 1;
+    } */
+    .nav .main-menu-container .main-menu .sub2-menu-container {
+        max-height: 0;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color:  gray;
+        border-bottom-right-radius: 12px;
+        transition: all 1s;
+        top: 0;
+        left: 100%;
+    }
+    .nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu {
+        opacity: 0;
+        list-style: none;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        transition: all 1s;
+    }
+    .nav .main-menu-container .main-menu li .sub2-menu-container .sub2-menu li {
+        padding: 5px 0;
+    }
+    .nav .main-menu-container .main-menu .sub2-menu-container .sub2-menu li a:hover {
+        color: red;
+    }
+}
